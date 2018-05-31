@@ -1,0 +1,114 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+import java.util.Scanner;
+class game{
+
+  public static void main(String args[]){
+    Scanner scan = new Scanner(System.in);
+    int a;
+    System.out.println("Please enter your name!");
+    String name = scan.nextLine();
+    System.out.println("Hi " + name + ", welcome to the game. Please reply 0 to continue.");
+    a = scan.nextInt();
+    
+    
+    // data of player
+    //
+    
+    
+    System.out.println("******************************************************************************************************");
+    System.out.println("One day you woke up in a place that you have no idea which part of earth it is. Apparently you are not at home anymore.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("You are in a dark and scuff room of a abandoned wood house, you can even smell the rat shit and the noise of flies.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("The only light source is a candle on the floor. With the thin flame jumping on the candle, you see a big wooden chest in the cornor of the room.(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"This place... doesn't seems to be safe... I better grab something in hand.\" You walk toward that chest and open it.(reply 0)");
+    a = scan.nextInt();
+    
+    System.out.println(name + ":\"\"(reply 0)");
+    a = scan.nextInt();
+    System.out.println("(reply 0)");
+    a = scan.nextInt();
+    
+    
+    System.out.println("Now your have to choose your weapon, you have 4 options, they are Long Sword, Big Machete, Bow&Arrow, War Hammer (reply 0)");
+    a = scan.nextInt();
+    System.out.println("the weapon your choose will affect your attack, defence, agility and health, and they will be upgraded in the game later: (reply 0)");
+    a = scan.nextInt();
+    System.out.println("Sword users have perfect balance on all abilities.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("Machete users are good at attacking aggressively, they are good at attacking, normal defence and agility. And due to the weight of machete they have better stamina.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("Bow&Arrow users have the best agility and the ability to attack from distance, but they are not so good at defending.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("War hammer users are the strongest soldiers, they are make tons of damage and they have the best stamina, but they are not very agile.(reply 0)");
+    a = scan.nextInt();
+    System.out.println("Now, make your choice!*1.Long Sword, *2.Big Machete, *3.Bow&Arrow, *4.War Hammer(reply 1-4)");
+    int choice = scan.nextInt();
+    while(choice < 1 || choice > 4){
+      System.out.println("That's not an option, please try again!*1.Long Sword, *2.Big Machete, *3.Bow&Arrow, *4.War Hammer(reply 1-4)");
+      choice = scan.nextInt();
+    }
+    if(choice == 1){
+      System.out.println("You found a sword in the chest.");
+    }else if(choice == 2){
+      System.out.println("You found a mechete in the chest.");
+    }else if(choice == 3){
+      System.out.println("You found bow and arrows in the chest.");
+    }else{
+      System.out.println("You found a heavy hammer in the chest.");
+    }
+    
+    Player yeah = new Player(name, choice);
+    yeah.printPlayer();
+    
+    System.out.println(name + ":\"Ok...At least dad taught me how to handle this...\"(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"\You walked out of the room, there's a silhouette in the end of the hallway. You can't really tell who he is but that silhouette is familiar."(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"That person is standing with both hands behind his back, mumbling:"I deserve it...I'm doubtless the best! Why couldn't I get what I want? I'm the best! I'm the best! I'm the best!"\"(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"You walked towarded that person, all of a sudden, the person turned his face to you. \"(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"You realized something crazy...you know that face...more than anyone...else in the world.\"(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"That is yourself.\"(reply 0)");
+    a = scan.nextInt();
+    System.out.println(name + ":\"He suddenly go ape and rush to you!\"(reply 0)");
+    a = scan.nextInt();
+    
+    
+    Monster prejudice = new Monster("Prejudice" + name, 400, 10);
+    System.out.println("Starting fighting, you can choose to attack or use item. You health will recover after each fight.");
+    
+  }
+} 
+
+
+
+
+
+
+
