@@ -100,9 +100,20 @@ class game{
     a = scan.nextInt();
     
     
-    Monster prejudice = new Monster("Prejudice" + name, 400, 10);
-    System.out.println("Starting fighting, you can choose to attack or use item. You health will recover after each fight.");
-    
+    Monster arrogance = new Monster("Arrogance" + name, 400, 10);
+    System.out.println("Starting fighting, Your health will recover after each fight.");
+    while(monster.getHeatlth > 0){
+      arrogance.printMonster(arrogance);
+      yeah.printPlayer();
+      System.out.println("Arrogance attacked you and did" + arrogance.getAttack() + "damage to you.");
+      yeah.getDamage(arrogance.getAttack());
+      System.out.println("Your HP: " + yeah.getHealth());
+      System.out.println("It's your turn! *1. Attack *2. use item *3. show him thumb down(reply 1-2)");
+      a = scan.nextInt();
+      if(a == 1){
+        System.out.println("You did " + yeah.getAttack() + "damage to the monster.");
+      }
+    }
   }
 } 
 
