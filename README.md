@@ -1,23 +1,19 @@
 
-The Spelling Game CS-170-01
-1
-Abstract
-This project was important for our group as it taught us deeply about Java. During the first meeting we got together and brainstormed many ideas for the project. We finally decided to settle on the spelling game. We started working on the game and writing the code.
-We divided ourselves to different parts of the code. Zhexian worked on the GameFrame.Java and the GUI design. Jose and Moksh worked on the Player.Java, TextReader.Java and TextWriter.Java classes. Nicholas worked on the audio for the whoe game.
-Ob jective
-The objective of this project was to create a friendly and educational game for the kids as well as learn important techniques to use in the Java environment.
+Abstract: This is a game that given a word that is randomly missing a few letters and a picture as hint for the player to guess the word. The objective of this project was to create a friendly and educational game for the kids as well as learn important techniques about Java.
 
-Screenshots of the Game
- You and enter your name like this in the game:
+The game includes graphic as well as sound effects.
+
+
+Screenshots of the Game:
+You and enter your name like this in the game:
  
  ![image](https://user-images.githubusercontent.com/26106407/171627848-4dfb7152-fbeb-40b6-97ed-3d67caff9389.png)
 
- If you enter the name wrong or not correctly, you will get an error like this:
+If you enter the name wrong or not correctly, you will get an error like this:
  
  ![image](https://user-images.githubusercontent.com/26106407/171627889-f591bf85-a7bb-4c5b-ad20-1c03e49f5165.png)
 
-
- After that, a brief description of the game will shows up:
+After that, a brief description of the game will shows up:
  
  ![image](https://user-images.githubusercontent.com/26106407/171627963-a8521b17-614f-4361-87a3-b592f3ed3ec9.png)
 
